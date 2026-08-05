@@ -1,0 +1,244 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --primary:#4F46E5;
+    --secondary:#6366F1;
+    --dark:#0F172A;
+    --light:#F8FAFC;
+    --gray:#64748B;
+    --gold:#FBBF24;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F5F7FB;
+    color:var(--dark);
+}
+
+/*  NAVBAR  */
+
+.navbar{
+    background:rgba(15,23,42,.92)!important;
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.nav-link{
+    color:#e2e8f0!important;
+    margin-left:10px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:var(--gold)!important;
+}
+
+/*  HERO */
+
+.hero{
+    padding:120px 0;
+    background:
+    linear-gradient(135deg,#0F172A 0%,#312E81 50%,#4F46E5 100%);
+    color:white;
+}
+
+.hero h1{
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero .text-primary{
+    color:#FBBF24!important;
+}
+
+.hero p{
+    color:#d6d9e2!important;
+}
+
+.hero img{
+    border-radius:25px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+    transition:.5s;
+}
+
+.hero img:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+/* BUTTONS  */
+
+.btn-primary{
+    background:linear-gradient(135deg,#4F46E5,#6366F1);
+    border:none;
+    padding:12px 28px;
+    border-radius:50px;
+    transition:.35s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(79,70,229,.35);
+}
+
+.btn-outline-dark{
+    border-radius:50px;
+}
+
+/*  ALERT  */
+
+.alert{
+    border:none;
+    border-left:6px solid #16A34A;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* SECTION TITLES  */
+
+section h2{
+    font-weight:700;
+    color:var(--dark);
+}
+
+/*  CARDS  */
+
+.card{
+    border:none;
+    border-radius:22px;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+}
+
+.card-body{
+    padding:35px;
+}
+
+.card i{
+    transition:.4s;
+}
+
+.card:hover i{
+    transform:scale(1.15);
+}
+
+.card p{
+    color:#64748B;
+}
+
+/*  CAROUSEL */
+
+.carousel img{
+    border-radius:25px;
+    height:500px;
+    object-fit:cover;
+}
+
+/*  FORM */
+
+form input,
+form select,
+form textarea{
+    border-radius:14px!important;
+    padding:14px!important;
+    border:1px solid #dbe3ed!important;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+    box-shadow:0 0 0 .25rem rgba(79,70,229,.18)!important;
+    border-color:#4F46E5!important;
+}
+
+/*  MODAL  */
+
+.modal-content{
+    border:none;
+    border-radius:20px;
+}
+
+.modal-header{
+    background:#0F172A;
+    color:white;
+}
+
+/*  FOOTER */
+
+footer{
+    background:#0F172A!important;
+}
+
+footer h5{
+    font-weight:700;
+}
+
+footer i{
+    transition:.3s;
+    cursor:pointer;
+}
+
+footer i:hover{
+    color:#FBBF24;
+    transform:translateY(-5px);
+}
+
+/*  ANIMATIONS  */
+
+.card,
+.btn,
+img{
+    transition:.35s ease;
+}
+
+/*  RESPONSIVE  */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+    padding:80px 0;
+}
+
+.hero img{
+    margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.3rem;
+}
+
+.carousel img{
+    height:280px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+}
